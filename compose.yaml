@@ -15,19 +15,19 @@ services:
     depends_on:
       - db
     build:  
-      context: ./api/
+      context: ./next-rails-api/
       dockerfile: Dockerfile
     ports:
       - 3000:3000
     volumes:
-      - ./api:/app
+      - ./next-rails-api/:/app
     command: rails server -b 0.0.0.0
   front:
     build:
-      context: ./front/
+      context: ./next-rails-app/
       dockerfile: Dockerfile
     volumes:
-      - ./front/app:/user/src/app
+      - ./next-rails-app/app:/user/src/app
     command: 'yarn dev'
     ports:
       - "8000:3000"
