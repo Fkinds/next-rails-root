@@ -1,0 +1,6 @@
+[submodule "next-rails-api"]
+	path = next-rails-api
+	url = https://github.com/Fkinds/next-rails-api
+[submodule "next-rails-app"]
+	path = next-rails-app
+	url = https://github.com/Fkinds/next-rails-app
